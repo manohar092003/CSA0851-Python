@@ -1,0 +1,19 @@
+month=input("month:")
+date=int(input("enter date:"))
+if month in('Mar', 'Apr', 'May', 'Jun'):
+    season="summer"
+elif month in('Jun','Jul','Aug','Sep'):
+    season="spring"
+elif month in('Sep','Oct','Nov','Dec'):
+    season="fall"
+else:
+    season="winter"
+if (month == "Mar") and (date > 19):
+    season ="summer"
+elif(month == "Jun") and (date > 20):
+    season="spring"
+elif(month =="Sep") and (date > 21):
+    season="fall"
+elif (month =="Dec") and (date > 20):
+    season="winter"
+print(season,"season")
